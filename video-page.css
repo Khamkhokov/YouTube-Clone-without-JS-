@@ -1,0 +1,241 @@
+.container {
+  display: flex;
+  column-gap: 25px;
+}
+
+.page-left-section {
+  width: 1200px;
+}
+
+.video {
+  width: 100%;
+}
+
+.video-name {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.main-stat-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.main-stat-right,
+.main-stat-left {
+  display: flex;
+  align-items: center;
+}
+
+.comment-author-picture,
+.channel-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 12px;
+}
+
+.channel-name {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.channel-subscribers-amount {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.subscribe-button {
+  margin-left: 35px;
+  background-color: black;
+  color: white;
+  padding: 9px 14px 9px 14px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  opacity: 0.8;
+}
+
+.subscribe-button:active {
+  opacity: 0.6;
+}
+
+.more-container,
+.make-clip-container,
+.share-container,
+.like-dislike-amount {
+  display: flex;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.comments-ham-menu-icon,
+.like-icon,
+.dislike-icon,
+.make-clip-icon,
+.share-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.dislike-icon {
+  margin-left: 20px;
+}
+
+.description {
+  background-color: rgb(247, 247, 247);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.description-stats {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.description-albumn {
+  color: rgb(113, 113, 113);
+  margin-left: 10px;
+}
+
+.description-text {
+  margin-bottom: 5px;
+}
+
+.description-link {
+  margin-bottom: 5px;
+}
+
+/* КОММЕНТАРИИ СЕКЦИЯ (ВНИЗУ) */
+
+.comments-amount {
+  display: flex;
+  align-items: center;
+}
+
+.comments-ham-menu-icon {
+  margin-left: 35px;
+}
+
+.write-comment-section {
+  margin-top: 20px;
+  display: flex;
+}
+
+.write-comment-input {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+  width: 100%;
+}
+
+.write-comment::placeholder {
+  font-size: 14px;
+  font-family: roboto, arial;
+}
+
+.comments-container {
+  margin-top: 40px;
+}
+
+.comments-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-top: 40px;
+}
+
+.comments-each {
+  display: flex;
+}
+
+.comment-author {
+  font-weight: 500;
+}
+
+.comment-date {
+  color: rgb(113, 113, 113);
+  font-weight: 400;
+}
+
+.comment {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 24px;
+}
+
+.comments-react-section {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 250px;
+}
+
+.comment-answer {
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+/* Медиа Запросы */
+
+@media (max-width: 1440px) {
+  .main-stat-container {
+    display: block;
+  }
+
+  .main-stat-right {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 722px) {
+  .main-stat-right {
+    display: block;
+  }
+
+  .main-stat-left {
+    justify-content: space-between;
+  }
+
+  .dislike-icon {
+    margin-left: 7px;
+  }
+
+  .subscribe-button {
+    margin-left: 0;
+  }
+
+  .channel-picture {
+    margin-right: 50px;
+  }
+
+  .more-container,
+  .make-clip-container,
+  .share-container,
+  .like-dislike-amount {
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
